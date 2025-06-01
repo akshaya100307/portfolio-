@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Akshaya - Portfolio</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f4f4f9;
+      color: #333;
+    }
+
+    .welcome-banner {
+      background: linear-gradient(135deg, #6200ea, #bb86fc);
+      color: white;
+      text-align: center;
+      padding: 60px 20px;
+      font-size: 2rem;
+      font-weight: bold;
+      letter-spacing: 1px;
+      box-shadow: 0 4px 12px rgba(98, 0, 234, 0.4);
+    }
+
+    nav {
+      position: sticky;
+      top: 0;
+      background: #6200ea;
+      padding: 1rem 0;
+      z-index: 1000;
+    }
+    nav ul {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      list-style: none;
+    }
+    nav ul li {
+      margin: 0 20px;
+    }
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1.1rem;
+      transition: color 0.3s ease;
+    }
+    nav ul li a:hover,
+    nav ul li a:focus {
+      color: #bb86fc;
+    }
+
+    section {
+      max-width: 1000px;
+      margin: 60px auto;
+      padding: 40px 30px;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    h1, h2 {
+      color: #6200ea;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      line-height: 1.6;
+      font-size: 1.1rem;
+      color: #444;
+    }
+
+    .profile-img {
+      display: block;
+      margin: 0 auto 20px;
+      border-radius: 50%;
+      width: 160px;
+      height: 160px;
+      object-fit: cover;
+      box-shadow: 0 4px 15px rgba(98, 0, 234, 0.3);
+    }
+
+    .project-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 20px;
+    }
+
+    .project-card {
+      background: linear-gradient(145deg, #e0e0e0, #ffffff);
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.08);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .project-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 20px rgba(98, 0, 234, 0.2);
+    }
+
+    .project-card h3 {
+      color: #3700b3;
+      margin-top: 0;
+    }
+
+    .contact-links {
+      margin-top: 20px;
+    }
+
+    .contact-links p {
+      font-size: 1.1rem;
+      margin: 10px 0;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #6200ea;
+      color: white;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 600px) {
+      nav ul {
+        flex-direction: column;
+      }
+      nav ul li {
+        margin: 10px 0;
+      }
+      section {
+        margin: 40px 15px;
+        padding: 30px 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="welcome-banner">Welcome to My Portfolio!</div>
+
+  <nav>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About Me</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section id="home">
+    <h1>Welcome</h1>
+    <p>This is my personal website showcasing who I am, my projects, and my interests. Use the navigation menu above to explore more!</p>
+  </section>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <img src="photo" alt="Profile Picture" class="profile-img" />
+    <p>Hello! I'm Akshaya, 
+        I’m a dedicated and creative Computer Science and Engineering freasher student with a strong interest in solving real-world problems through technology. 
+        <p> </p>My journey so far has been filled with exciting projects where I've combined logic, design, and innovation to create meaningful digital experiences. I specialize in full-stack web development using HTML, CSS, JavaScript, and backend logic with C/C++, while also exploring the world of Python for simulations and automation. 
+        <p> </p>My key projects include an AI-based adaptive learning platform that analyzes student performance to deliver personalized learning paths, and interactive simulations that demonstrate physics concepts like diffraction and wave interference in a visually compelling way. In addition to technical skills, my education has equipped me with a solid understanding of data structures, algorithms, electrical engineering basics, optical fiber communication, and sensor technology. 
+        <p> </p>I’m also experienced in developing visually engaging interfaces, implementing logic-heavy algorithms, and working with real-time data visualization. I’m always eager to explore new technologies, contribute to impactful projects, and collaborate with other passionate minds. Whether it's building efficient systems, simulating scientific phenomena, or creating clean UI/UX, I bring creativity, precision, and curiosity to every task I take on.. </p>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="project-grid">
+      <div class="project-card">
+        <h3>Task Prioritization System</h3>
+        <p>A web-based system to organize and manage tasks by priority using queues. Built using HTML, CSS, and JavaScript.</p>
+      </div>
+      <div class="project-card">
+        <h3>AI Adaptive Learning Platform</h3>
+        <p>An intelligent quiz system that adapts learning materials based on student performance and engagement.</p>
+      </div>
+      <div class="project-card">
+        <h3>Portfolio Website</h3>
+        <p>A responsive and stylish portfolio site to showcase my journey, projects, and skills.</p>
+      </div>
+      <div class="project-card">
+        <h3>Physics Simulation</h3>
+        <p>Interactive simulations on diffraction and wave interference using HTML5 Canvas and JavaScript.</p>
+      </div>
+      <div class="project-card">
+        <h3>Real-time Data Visualization</h3>
+        <p>Web application visualizing real-time sensor data with charts, interactivity, and responsive design.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>I'd love to hear from you! Feel free to reach out through the details below:</p>
+    <div class="contact-links">
+      <p>📞 Contact Number: <strong>7093033435</strong></p>
+      <p>📧 Email: <strong>akshayachinthala10@gmail.com</strong></p>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 Akshaya. All rights reserved.
+  </footer>
+
+</body>
+</html>
